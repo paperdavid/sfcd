@@ -1,5 +1,5 @@
 .footer {
-	padding: 32px 0;
+	padding: 32px 0 180px;
 	background-color: @bg-footer;
 	color: @white;
 
@@ -15,9 +15,13 @@
 			color: @white;
 			line-height: 30px;
 			text-decoration: none;
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+			border-bottom-color: transparent;
 
 			&:hover {
-				border-bottom: 1px solid @white;
+				border-bottom-color: @white;
+				transition: border-color .4s
 			}
 		}//footer__list
 
@@ -28,6 +32,7 @@
 
 
 			&__title {
+				margin: 9px 0 8px;
 				font-size: 14px;
 			}
 
@@ -38,34 +43,3 @@
 		}//footer__item--address
 	}//footer__item
 }//footer
-
-	.st0{fill:#FFFFFF;}
-	.st1{fill:#C0311C;}
-	.st2{fill:#92C42D;}
-	.st3{fill:#63B13B;}
-
-.logo {
-
-	&--original {
-		.st0{fill:#FFFFFF;}
-		.st1{fill:#C0311C;}
-		.st2{fill:#92C42D;}
-		.st3{fill:#63B13B;}
-		.st4{fill:#FFFFFF;}
-	}
-
-	&--gray {
-	width: 160px;
-
-	.st0{fill:transparent;}
-	.st1{fill:@white-40;}
-	.st2{fill:@white-40;}
-	.st3{fill:@white-40;}
-	.st4{fill:@white-40;}
-	}
-
-}
-
-
-
-

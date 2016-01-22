@@ -1563,7 +1563,7 @@ figure.fullwidth figcaption
 }
 .footer
 {
-    padding: 32px 0;
+    padding: 32px 0 180px;
 
     color: #fff;
     background-color: #434d54;
@@ -1583,10 +1583,16 @@ figure.fullwidth figcaption
     text-decoration: none;
 
     color: #fff;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
 }
 .footer__item__list a:hover
 {
-    border-bottom: 1px solid #fff;
+    -webkit-transition: border-color .4s;
+            transition: border-color .4s;
+
+    border-bottom-color: #fff;
 }
 .footer__item--address
 {
@@ -1599,26 +1605,62 @@ figure.fullwidth figcaption
 .footer__item--address__title
 {
     font-size: 14px;
+
+    margin: 9px 0 8px;
 }
 .footer__item--address__info
 {
     font-size: 14px;
 }
-.st0
+.loyalty
 {
-    fill: #fff;
+    padding: 60px 0;
+
+    color: #fff;
+    background-color: #ec2e2e;
 }
-.st1
+.loyalty__title
 {
-    fill: #c0311c;
+    font-size: 50px;
+    font-weight: bold;
+
+    display: block;
+
+    margin-bottom: 15px;
+
+    letter-spacing: .01em;
 }
-.st2
+.loyalty__info
 {
-    fill: #92c42d;
+    font-size: 18px;
+    line-height: 25px;
+
+    margin-bottom: 50px;
 }
-.st3
+.loyalty__card
 {
-    fill: #63b13b;
+    position: relative;
+}
+.loyalty__card__logo
+{
+    position: absolute;
+    right: 0;
+    left: -50px;
+
+    width: 226px;
+    margin: 20px auto;
+}
+.loyalty__card__rect
+{
+    display: block;
+
+    width: 330px;
+    height: 200px;
+    margin: 17px auto;
+
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .11);
 }
 .logo--original .st0
 {
@@ -1643,6 +1685,7 @@ figure.fullwidth figcaption
 .logo--gray
 {
     width: 160px;
+    margin-left: -5px;
 }
 .logo--gray .st0
 {
@@ -1664,8 +1707,49 @@ figure.fullwidth figcaption
 {
     fill: rgba(255, 255, 255, .4);
 }
+.logo--loyalty .st0
+{
+    fill: transparent;
+}
+.logo--loyalty .st1
+{
+    fill: #ec2e2e;
+}
+.logo--loyalty .st2
+{
+    fill: #92c42d;
+}
+.logo--loyalty .st3
+{
+    fill: #63b13b;
+}
+.logo--loyalty .st4
+{
+    fill: #ec2e2e;
+}
+.btn--large
+{
+    font-size: 18px;
+
+    display: inline-block;
+
+    padding: 17px 37px;
+
+    text-decoration: none;
+
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+}
+.btn--large:hover
+{
+    -webkit-transition: .4s;
+            transition: .4s;
+
+    color: #ec2e2e;
+    background-color: #fff;
+}
 /* Custom 
 @import "common/header.less";
-@import "common/logo.less";
 
 */

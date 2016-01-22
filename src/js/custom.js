@@ -6,6 +6,6 @@ $(document).ready(function() {
 
     /* Custom */
 
-    //= ./common/desvg.js
+    
 
 });

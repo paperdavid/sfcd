@@ -178,51 +178,7 @@ gulp.task('svg', function () {
         .pipe(reload({stream: true}));
 });
 
-/* PNG Sprite */
-gulp.task('png-sprite', function () {
-    // Generate spritesheet
-    var spriteData = gulp.src(projectPath.src.pngSprite).pipe(spritesmith({
-        imgName: 'png-sprite.png',
-        imgPath: '../img/sprites/png/png-sprite.png',
-        retinaSrcFilter: projectPath.src.pngRetinaSprite,
-        retinaImgName: 'png-sprite-2x.png',
-        retinaImgPath: '../img/sprites/png/png-sprite-2x.png',
-        padding: 0,
-        cssName: '_png-sprite.less',
-        cssVarMap: function (sprite) {
-            sprite.name = 'sprite__' + sprite.name;
-        }
-    }));
 
-    // Pipe image stream through image optimizer and onto disk
-    spriteData.img
-        .pipe(imagemin())
-        .pipe(gulp.dest(projectPath.build.pngSprite));
-
-    // Pipe CSS stream onto disk
-    spriteData.css
-        .pipe(gulp.dest(projectPath.build.pngSpriteCSS))
-        .pipe(reload({stream:true}));
-});
-
-/* SVG sprite */
-gulp.task('svg-sprite', function () {
-    gulp.src(projectPath.src.svgSprite)
-        .pipe(svgspritesheet({
-            cssPathNoSvg: '../img/sprites/svg/svg-sprite.png',
-            cssPathSvg: '../img/sprites/svg/svg-sprite.svg',
-            padding: 0,
-            pixelBase: 16,
-            positioning: 'packed',
-            templateSrc: projectPath.src.svgSpriteTpl,
-            templateDest: projectPath.build.svgSpriteCSS,
-            units: 'px'
-        }))
-        .pipe(svgmin())
-        .pipe(gulp.dest(projectPath.build.svgSprite))
-        .pipe(svg2png())
-        .pipe(gulp.dest(projectPath.build.svgSpriteNoSvg));
-});
 
 /* Fonts */
 gulp.task('fonts', function() {
@@ -247,8 +203,6 @@ gulp.task('build', function(callback) {
         'js',
         'less',
         'images',
-        'png-sprite',
-        'svg-sprite',
         'svg',
         'fonts',
         callback)
@@ -271,12 +225,6 @@ gulp.task('watch',['webserver'], function(){
     });
     watch([projectPath.watch.svg], function(event, cb) {
         gulp.start('svg');
-    });
-    watch([projectPath.watch.pngSprite], function(event, cb) {
-        gulp.start('png-sprite');
-    });
-    watch([projectPath.watch.svgSprite], function(event, cb) {
-        gulp.start('svg-sprite');
     });
     watch([projectPath.watch.fonts], function(event, cb) {
         gulp.start('fonts');
