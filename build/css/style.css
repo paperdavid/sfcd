@@ -1369,11 +1369,6 @@ figure.fullwidth figcaption
 {
     margin-right: 24%;
 }
-img
-{
-    width: 100%;
-    max-width: 100%;
-}
 /* 
  * 	Core Owl Carousel CSS File
  *	v1.3.2
@@ -1597,6 +1592,8 @@ img
 {
     line-height: 30px;
 
+    margin-top: 20px;
+
     color: rgba(255, 255, 255, .4);
 }
 .footer__item--address__title
@@ -1606,6 +1603,66 @@ img
 .footer__item--address__info
 {
     font-size: 14px;
+}
+.st0
+{
+    fill: #fff;
+}
+.st1
+{
+    fill: #c0311c;
+}
+.st2
+{
+    fill: #92c42d;
+}
+.st3
+{
+    fill: #63b13b;
+}
+.logo--original .st0
+{
+    fill: #fff;
+}
+.logo--original .st1
+{
+    fill: #c0311c;
+}
+.logo--original .st2
+{
+    fill: #92c42d;
+}
+.logo--original .st3
+{
+    fill: #63b13b;
+}
+.logo--original .st4
+{
+    fill: #fff;
+}
+.logo--gray
+{
+    width: 160px;
+}
+.logo--gray .st0
+{
+    fill: transparent;
+}
+.logo--gray .st1
+{
+    fill: rgba(255, 255, 255, .4);
+}
+.logo--gray .st2
+{
+    fill: rgba(255, 255, 255, .4);
+}
+.logo--gray .st3
+{
+    fill: rgba(255, 255, 255, .4);
+}
+.logo--gray .st4
+{
+    fill: rgba(255, 255, 255, .4);
 }
 /* Custom 
 @import "common/header.less";
