@@ -13628,7 +13628,7 @@ $(document).ready(function() {
 
     /* Custom */
 
-  $('.owl-carousel').owlCarousel({
+  $('.recipes-carousel').owlCarousel({
       loop:true,
       margin:10,
       nav:false,
@@ -13652,6 +13652,14 @@ $(document).ready(function() {
               mouseDrag:false
           }
       }
+  })
+
+
+  $('.banner-carousel').owlCarousel({
+      items:1,
+      loop:true,
+      margin:10,
+      dots:true
   })
 
 });

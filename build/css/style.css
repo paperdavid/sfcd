@@ -1901,6 +1901,28 @@ figure.fullwidth figcaption
 
     background-color: #fafbfc;
 }
+.recipes__title
+{
+    font-size: 28px;
+    line-height: 30px;
+
+    margin-bottom: 30px;
+    padding-left: 30px;
+}
+.recipes__more a
+{
+    font-size: 18px;
+    line-height: 30px;
+
+    margin-bottom: 30px;
+    padding-right: 30px;
+
+    color: #ec2e2e;
+}
+.recipes__more a:hover
+{
+    text-decoration: underline;
+}
 .recipes__carousel__item
 {
     overflow: hidden;
@@ -2015,4 +2037,8 @@ figure.fullwidth figcaption
 .tag--breakfast
 {
     background-image: url(../../img/images/tags/breakfast.png);
+}
+.banner
+{
+    background-color: #ecdfd3;
 }
