@@ -7,11 +7,25 @@
 		&__item {
 			background-color: @white;
 			border-radius: 10px;
-			width: 380px;;
-			margin-bottom: 3px;
-			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.11);
+			margin: 3px;
+			box-shadow: 
+			0 1px 2px rgba(0, 0, 0, 0.11),
+			0 -1px 2px rgba(0, 0, 0, 0.11);
 			overflow: hidden;
+			
+			&__link {
+				display: block;
+				text-align: center;
+				padding: 20px 0;
+				color: #ec2e2e;
+				font-weight: bold;
+				font-size: 18px;
 
+				&:hover {
+					background-color: #ec2e2e;
+					color: @white;
+				}
+			}
 
 			&__image {
 
@@ -21,7 +35,7 @@
 				position: absolute;
 				width: 80px;
 				height: 80px;
-				top: 40%;
+				top: 35%;
 				right: 7%;
 				background-color: #46b650;
 				border-radius: 50px;
@@ -33,15 +47,17 @@
 					font-size: 24px;
 					font-weight: bold;
 					letter-spacing: 0.01em;
-					padding: 20px 8px;
+					padding: 25px 12px;
 				}
 			}
 
 			&__info {
-				padding: 20px;
+				padding: 20px 20px 40px;
+				border-bottom: 1px solid #f4f5f5;
+				height: 180px;
 
 				&--tags {
-					margin-bottom: 22px;
+					margin-bottom: 14px;
 				}
 
 				&--title {
@@ -50,11 +66,47 @@
 					margin-bottom: 20px;
 				}
 
-				&--tiem {
+				&--time {
+					font-size: 18px;
+					color: @black-40;
 
+					&:before {
+						content: '';
+						display: inline-block;
+						width: 18px;
+						height: 18px;
+						vertical-align: middle;
+						background-image: url(../../img/images/tags/clock.png);
+						background-size: cover;
+					}
 				}
 			}//info
 
 		}//item
 	}//carousel
 }//recipes
+
+
+
+.tag {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: 50%;
+
+	&--vegan {
+		background-image: url(../../img/images/tags/vegan.png);
+	}
+
+	&--burger {
+		background-image: url(../../img/images/tags/burger.png);
+	}
+
+	&--breakfast {
+		background-image: url(../../img/images/tags/breakfast.png);
+	}
+}
+
+
