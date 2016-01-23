@@ -1,0 +1,38 @@
+.stores {
+  background-color: @bg-stores;
+  height: 300px;
+
+  &__map {
+    position: relative;
+    background-image: url(../../img/images/map.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+
+    &__pin img{
+      position: absolute;
+      top: 80px;
+    }
+
+    &__info {
+      position: absolute;
+      top: 80px;
+
+      & span {
+        font-size: 124px;
+        line-height: 100px;
+        color: @white;
+        font-weight: bold;
+      }
+
+      & p {
+        margin-top: 20px;
+        font-size: 24px;
+        color: #bdcf01;
+      }
+    }
+  }//map
+}//stores
+
+//background-position: -100px; для мобайл
+
