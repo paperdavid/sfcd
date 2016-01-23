@@ -1,0 +1,60 @@
+.recipes {
+	background-color: #fafbfc;
+	padding: 60px 0;
+	
+	&__carousel {
+
+		&__item {
+			background-color: @white;
+			border-radius: 10px;
+			width: 380px;;
+			margin-bottom: 3px;
+			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.11);
+			overflow: hidden;
+
+
+			&__image {
+
+			}
+
+			&__price {
+				position: absolute;
+				width: 80px;
+				height: 80px;
+				top: 40%;
+				right: 7%;
+				background-color: #46b650;
+				border-radius: 50px;
+				box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.11);
+
+				& span {
+					display: block;
+					color: @white;
+					font-size: 24px;
+					font-weight: bold;
+					letter-spacing: 0.01em;
+					padding: 20px 8px;
+				}
+			}
+
+			&__info {
+				padding: 20px;
+
+				&--tags {
+					margin-bottom: 22px;
+				}
+
+				&--title {
+					font-size: 24px;
+					font-weight: bold;
+					margin-bottom: 20px;
+				}
+
+				&--tiem {
+
+				}
+			}//info
+
+		}//item
+	}//carousel
+}//recipes

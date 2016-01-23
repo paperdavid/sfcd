@@ -30,8 +30,6 @@ samp,
 small,
 strike,
 strong,
-sub,
-sup,
 tt,
 var,
 h1,
@@ -1892,4 +1890,62 @@ figure.fullwidth figcaption
     margin-top: 20px;
 
     color: #bdcf01;
+}
+.recipes
+{
+    padding: 60px 0;
+
+    background-color: #fafbfc;
+}
+.recipes__carousel__item
+{
+    overflow: hidden;
+
+    width: 380px;
+    margin-bottom: 3px;
+
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .11);
+}
+.recipes__carousel__item__price
+{
+    position: absolute;
+    top: 40%;
+    right: 7%;
+
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50px;
+    background-color: #46b650;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .11);
+}
+.recipes__carousel__item__price span
+{
+    font-size: 24px;
+    font-weight: bold;
+
+    display: block;
+
+    padding: 20px 8px;
+
+    letter-spacing: .01em;
+
+    color: #fff;
+}
+.recipes__carousel__item__info
+{
+    padding: 20px;
+}
+.recipes__carousel__item__info--tags
+{
+    margin-bottom: 22px;
+}
+.recipes__carousel__item__info--title
+{
+    font-size: 24px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
 }

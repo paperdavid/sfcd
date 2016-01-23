@@ -13642,7 +13642,8 @@ $(document).ready(function() {
           },
           1000:{
               items:3,
-              loop:false
+              loop:false,
+              mouseDrag:false
           }
       }
   })
