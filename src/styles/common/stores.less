@@ -35,7 +35,6 @@
 	}//map
 }//stores
 
-//background-position: -100px; для мобайл
 
 @media (max-width: 1024px) {
 	
@@ -48,7 +47,7 @@
 		&__pin img{
 			position: absolute;
 			top: 70px;
-			left: 40px;
+			left: 20px;
 		}
 
 		&__info {
@@ -57,6 +56,47 @@
 
 			& span {
 				font-size: 110px;
+			}
+
+			& p {
+				margin-top: 15px;
+			}
+		}
+	}//map
+}//stores
+}
+
+
+@media (max-width: 768px) {
+		.stores__pin img{
+			position: absolute;
+			top: 70px;
+			left: 40px;
+		}
+}
+
+
+
+@media screen and (max-device-width: 640px){
+	.stores {
+
+	&__map {
+		background-position: -100px;
+
+		height: 300px;
+
+		&__pin img{
+			position: absolute;
+			top: 70px;
+			left: 20px;
+		}
+
+		&__info {
+			position: absolute;
+			top: 80px;
+
+			& span {
+				font-size: 80px;
 			}
 
 			& p {

@@ -3,14 +3,14 @@
 	padding: 60px 0;
 
 	&__title {
-		padding-left: 30px;
+		padding-left: 15px;
 		margin-bottom: 30px;
 		font-size: 28px;
 		line-height: 30px;
 	}
 
 	&__more a{
-		padding-right: 30px;
+		padding-right: 15px;
 		margin-bottom: 30px;
 		font-size: 18px;
 		line-height: 30px;
@@ -129,4 +129,32 @@
 	}
 }
 
+@media screen and (max-device-width: 640px){
+		.recipes {
+		background-color: #fafbfc;
+		padding: 60px 0;
 
+		&__title {
+			padding-left: 15px;
+			margin-bottom: 0;
+			font-size: 22px;
+			font-weight: bold;
+			line-height: 30px;
+		}
+
+		&__more a{
+			padding-right: 15px;
+			margin-bottom: 0;
+			font-size: 18px;
+			line-height: 30px;
+			color: #ec2e2e;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	.recipes__carousel__item__price {
+		top: 25%;
+	}
+}
