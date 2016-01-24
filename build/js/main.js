@@ -13638,11 +13638,11 @@ $(document).ready(function() {
               items:1,
               mouseDrag:true
           },
-          600:{
+          768:{
               items:2,
               mouseDrag:true
           },
-          1000:{
+          1024:{
               items:2,
               mouseDrag:true
           },

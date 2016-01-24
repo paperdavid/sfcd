@@ -4,7 +4,6 @@
 	height: 40px;
 	min-height: 40px;
 	margin-bottom: 0;
-
 }
 
 .navbar-collapse {
@@ -108,10 +107,79 @@ a.dropdown-toggle{
 
 	&__login {
 		display: inline-block;
-		margin-left: 25px;
+		margin-left: 45px;
 		line-height: 80px;
 	}
 }
+
+@media (max-width: 1024px) {
+	.navbar-default .navbar-nav>li>a {
+		padding: 10px 5px;
+		font-size: 12px;
+	}
+	.navbar-default .navbar-nav>li>a.telephone {
+		font-size: 10px;
+		font-weight: bold;
+	}
+
+
+.menu {
+
+
+	&__logo a{
+		line-height: 93px;
+		vertical-align: middle;
+	}
+
+	&__list {
+		padding-left: 0px;
+
+		&__item {
+			margin-right: 10px;
+
+			& a {
+				font-size: 15px;
+
+
+				&:hover {
+					color: #fe9389;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	&__search {
+		display: inline-block;
+		line-height: 80px;
+		width: 20px;
+
+		& span {
+			color: @white;
+			font-size: 20px;
+			vertical-align: middle;
+			cursor: pointer;
+
+			&:hover {
+				color: #fe9389;
+			}
+		}
+	}
+
+	&__login {
+		display: inline-block;
+		margin-left: 30px;
+		line-height: 80px;
+	}
+}
+
+}
+
+@media (max-width: 768px) {
+	.menu__login {
+		margin-left: 5px;
+	}
+}
+
 
 
 

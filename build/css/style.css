@@ -92,51 +92,11 @@ body
 {
     box-sizing: border-box;
 }
-.inner
-{
-    padding: 3rem 0;
-}
-.inner--lg
-{
-    padding: 8rem 0;
-}
-.inner--sm
-{
-    padding: 1rem 0;
-}
-.inner--top
-{
-    padding-top: 8rem;
-}
-.inner--bottom
-{
-    padding-bottom: 8rem;
-}
 @media (max-width: 768px)
 {
     .mobile--none
     {
         display: none;
-    }
-    .inner
-    {
-        padding: 3rem 0;
-    }
-    .inner--lg
-    {
-        padding: 1rem 0;
-    }
-    .inner--sm
-    {
-        padding: 1rem 0;
-    }
-    .inner--top
-    {
-        padding: 1rem 0 1rem 0;
-    }
-    .inner--bottom
-    {
-        padding: 1rem 0 1rem 0;
     }
 }
 *
@@ -201,8 +161,8 @@ img
 {
     margin-right: auto;
     margin-left: auto;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 @media (min-width: 768px)
 {
@@ -216,6 +176,13 @@ img
     .container
     {
         width: 970px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .row
+    {
+        margin-right: -15px;
+        margin-left: -15px;
     }
 }
 @media (min-width: 1200px)
@@ -234,63 +201,63 @@ img
 }
 .row
 {
-    margin-right: -25px;
-    margin-left: -25px;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 .col-xs-1,
-.col-sm-1,
 .col-md-1,
 .col-lg-1,
 .col-xs-2,
-.col-sm-2,
 .col-md-2,
 .col-lg-2,
 .col-xs-3,
-.col-sm-3,
 .col-md-3,
 .col-lg-3,
 .col-xs-4,
-.col-sm-4,
 .col-md-4,
 .col-lg-4,
 .col-xs-5,
-.col-sm-5,
 .col-md-5,
 .col-lg-5,
 .col-xs-6,
-.col-sm-6,
 .col-md-6,
 .col-lg-6,
 .col-xs-7,
-.col-sm-7,
 .col-md-7,
 .col-lg-7,
 .col-xs-8,
-.col-sm-8,
 .col-md-8,
 .col-lg-8,
 .col-xs-9,
-.col-sm-9,
 .col-md-9,
 .col-lg-9,
 .col-xs-10,
-.col-sm-10,
 .col-md-10,
 .col-lg-10,
 .col-xs-11,
-.col-sm-11,
 .col-md-11,
 .col-lg-11,
 .col-xs-12,
-.col-sm-12,
 .col-md-12,
-.col-lg-12
+.col-lg-12,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12
 {
     position: relative;
 
     min-height: 1px;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .col-xs-1,
 .col-xs-2,
@@ -1731,6 +1698,35 @@ figure.fullwidth figcaption
 {
     color: rgba(255, 255, 255, .4);
 }
+@media (max-width: 1024px)
+{
+    .footer__item__title
+    {
+        font-size: 13px;
+    }
+    .footer__item__list a
+    {
+        font-size: 12px;
+    }
+    .footer__item--address
+    {
+        line-height: 30px;
+
+        margin-top: 20px;
+
+        color: rgba(255, 255, 255, .4);
+    }
+    .footer__item--address__title
+    {
+        font-size: 14px;
+
+        margin: 9px 0 8px;
+    }
+    .footer__item--address__info
+    {
+        font-size: 14px;
+    }
+}
 .loyalty
 {
     padding: 60px 0;
@@ -1780,6 +1776,48 @@ figure.fullwidth figcaption
     border-radius: 25px;
     background-color: #fff;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .11);
+}
+@media (max-width: 1024px)
+{
+    .loyalty__title
+    {
+        font-size: 40px;
+        font-weight: bold;
+
+        display: block;
+
+        margin-bottom: 10px;
+
+        letter-spacing: .01em;
+    }
+    .loyalty__info
+    {
+        font-size: 16px;
+        line-height: 25px;
+
+        margin-bottom: 25px;
+    }
+    .loyalty__card
+    {
+        position: relative;
+    }
+    .loyalty__card__logo
+    {
+        position: absolute;
+        right: 0;
+        left: -70px;
+
+        width: 226px;
+        margin: 20px auto;
+    }
+    .loyalty__card__rect
+    {
+        display: block;
+
+        width: 330px;
+        height: 200px;
+        margin: 17px auto;
+    }
 }
 .logo--original .st0
 {
@@ -1906,6 +1944,13 @@ figure.fullwidth figcaption
 
     background-image: url(../../img/svg/mail-h.svg);
 }
+@media (max-width: 1024px)
+{
+    .logo--original
+    {
+        width: 115px;
+    }
+}
 .btn--large
 {
     font-size: 18px;
@@ -1951,6 +1996,32 @@ figure.fullwidth figcaption
     color: #ec2e2e;
     background-color: #fff;
 }
+@media (max-width: 1024px)
+{
+    .btn--small
+    {
+        font-size: 14px;
+
+        display: inline-block;
+
+        padding: 4px 10px;
+
+        text-decoration: none;
+        letter-spacing: .02em;
+
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 50px;
+    }
+    .btn--small:hover
+    {
+        -webkit-transition: .4s;
+                transition: .4s;
+
+        color: #ec2e2e;
+        background-color: #fff;
+    }
+}
 .trademarks
 {
     height: 300px;
@@ -1988,7 +2059,7 @@ figure.fullwidth figcaption
 {
     height: 300px;
 
-    background-color: #0f8433;
+    background-color: #008627;
 }
 .stores__map
 {
@@ -2004,6 +2075,7 @@ figure.fullwidth figcaption
 {
     position: absolute;
     top: 80px;
+    left: 40px;
 }
 .stores__map__info
 {
@@ -2025,6 +2097,32 @@ figure.fullwidth figcaption
     margin-top: 20px;
 
     color: #bdcf01;
+}
+@media (max-width: 1024px)
+{
+    .stores__map
+    {
+        height: 300px;
+    }
+    .stores__map__pin img
+    {
+        position: absolute;
+        top: 70px;
+        left: 40px;
+    }
+    .stores__map__info
+    {
+        position: absolute;
+        top: 80px;
+    }
+    .stores__map__info span
+    {
+        font-size: 110px;
+    }
+    .stores__map__info p
+    {
+        margin-top: 15px;
+    }
 }
 .recipes
 {
@@ -2233,26 +2331,8 @@ figure.fullwidth figcaption
     margin-right: 30px;
 
     border-radius: 100px;
-    background-color: #46b650;
+    background-image: url(../../img/svg/badge.svg);
     box-shadow: 0 1px 2px rgba(0, 0, 0, .11);
-}
-.price-badge__overlay
-{
-    position: absolute;
-    top: 10%;
-    left: -5%;
-
-    width: 160px;
-    height: 210px;
-    margin-top: -50px;
-
-    -webkit-transform: rotate(20deg);
-            transform: rotate(40deg);
-
-    background-color: #52d05d;
-
-    -webkit-clip-path: circle(86.1% at 0 29%);
-            clip-path: circle(86.1% at 0 29%);
 }
 .price-badge__new
 {
@@ -2292,6 +2372,57 @@ figure.fullwidth figcaption
     color: #fff;
 
     ffont-weight: bold;
+}
+@media (max-width: 1024px)
+{
+    .banner__carousel
+    {
+        height: 500px;
+        max-height: 500px;
+    }
+    .banner__carousel__item
+    {
+        padding-top: 40px;
+    }
+    .banner__carousel__item img
+    {
+        width: 400px;
+    }
+    .banner__carousel__item__date
+    {
+        font-size: 18px;
+
+        display: block;
+
+        margin-bottom: 80px;
+
+        letter-spacing: .02em;
+    }
+    .banner__carousel__item__title
+    {
+        font-size: 45px;
+        font-weight: bold;
+
+        width: 300px;
+    }
+    .banner__carousel__item__weight
+    {
+        font-size: 18px;
+
+        display: block;
+
+        margin-top: 100px;
+
+        letter-spacing: .02em;
+    }
+    .banner__bottom
+    {
+        background-color: #fafbfc;
+    }
+    .price-badge
+    {
+        margin-top: -80px;
+    }
 }
 .navbar
 {
@@ -2419,5 +2550,79 @@ a.dropdown-toggle
 
     display: inline-block;
 
-    margin-left: 25px;
+    margin-left: 45px;
+}
+@media (max-width: 1024px)
+{
+    .navbar-default .navbar-nav > li > a
+    {
+        font-size: 12px;
+
+        padding: 10px 5px;
+    }
+    .navbar-default .navbar-nav > li > a.telephone
+    {
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .menu__logo a
+    {
+        line-height: 93px;
+
+        vertical-align: middle;
+    }
+    .menu__list
+    {
+        padding-left: 0;
+    }
+    .menu__list__item
+    {
+        margin-right: 10px;
+    }
+    .menu__list__item a
+    {
+        font-size: 15px;
+    }
+    .menu__list__item a:hover
+    {
+        text-decoration: none;
+
+        color: #fe9389;
+    }
+    .menu__search
+    {
+        line-height: 80px;
+
+        display: inline-block;
+
+        width: 20px;
+    }
+    .menu__search span
+    {
+        font-size: 20px;
+
+        cursor: pointer;
+        vertical-align: middle;
+
+        color: #fff;
+    }
+    .menu__search span:hover
+    {
+        color: #fe9389;
+    }
+    .menu__login
+    {
+        line-height: 80px;
+
+        display: inline-block;
+
+        margin-left: 30px;
+    }
+}
+@media (max-width: 768px)
+{
+    .menu__login
+    {
+        margin-left: 5px;
+    }
 }
