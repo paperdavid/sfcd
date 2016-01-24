@@ -1928,6 +1928,29 @@ figure.fullwidth figcaption
     color: #ec2e2e;
     background-color: #fff;
 }
+.btn--small
+{
+    font-size: 18px;
+
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    text-decoration: none;
+    letter-spacing: .02em;
+
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+}
+.btn--small:hover
+{
+    -webkit-transition: .4s;
+            transition: .4s;
+
+    color: #ec2e2e;
+    background-color: #fff;
+}
 .trademarks
 {
     height: 300px;
@@ -2056,6 +2079,8 @@ figure.fullwidth figcaption
 }
 .recipes__carousel__item__link:hover
 {
+    text-decoration: none;
+
     color: #fff;
     background-color: #ec2e2e;
 }
@@ -2087,7 +2112,7 @@ figure.fullwidth figcaption
 }
 .recipes__carousel__item__info
 {
-    height: 180px;
+    height: 190px;
     padding: 20px 20px 40px;
 
     border-bottom: 1px solid #f4f5f5;
@@ -2267,4 +2292,132 @@ figure.fullwidth figcaption
     color: #fff;
 
     ffont-weight: bold;
+}
+.navbar
+{
+    height: 40px;
+    min-height: 40px;
+    margin-bottom: 0;
+
+    border: none;
+    border-radius: 0;
+}
+.navbar-collapse
+{
+    padding-left: 0;
+}
+a.dropdown-toggle
+{
+    padding-left: 0!important;
+}
+.navbar-default
+{
+    background-color: #c90f0f;
+}
+.navbar-default .navbar-nav > li > a
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    color: #ffb5ae;
+}
+.navbar-default .navbar-nav > li > a:hover
+{
+    color: #fff;
+}
+.navbar-nav
+{
+    font-size: 16px;
+    line-height: 40px;
+}
+.navbar-right
+{
+    font-size: 18px;
+    line-height: 40px;
+}
+.navbar-nav-center
+{
+    font-size: 16px;
+    line-height: 40px;
+
+    color: #fe9389;
+}
+.navbar-default .navbar-nav > .open > a
+{
+    color: #fff!important;
+    background-color: #c90f0f!important;
+}
+.dropdown-menu
+{
+    border: none;
+    background-color: #c90f0f;
+    box-shadow: none;
+}
+.dropdown-menu li a
+{
+    color: #fff;
+}
+.menu
+{
+    height: 80px;
+
+    background-color: #eb2626;
+}
+.menu__logo a
+{
+    line-height: 105px;
+
+    vertical-align: middle;
+}
+.menu__list
+{
+    padding-left: 10px;
+}
+.menu__list__item
+{
+    display: inline-block;
+
+    margin-right: 50px;
+}
+.menu__list__item a
+{
+    font-size: 20px;
+    line-height: 80px;
+
+    color: #fff;
+}
+.menu__list__item a:hover
+{
+    text-decoration: none;
+
+    color: #fe9389;
+}
+.menu__search
+{
+    line-height: 80px;
+
+    display: inline-block;
+
+    width: 20px;
+}
+.menu__search span
+{
+    font-size: 20px;
+
+    cursor: pointer;
+    vertical-align: middle;
+
+    color: #fff;
+}
+.menu__search span:hover
+{
+    color: #fe9389;
+}
+.menu__login
+{
+    line-height: 80px;
+
+    display: inline-block;
+
+    margin-left: 25px;
 }

@@ -40,4 +40,6 @@ $(document).ready(function() {
       margin:30
   })
 
+  document.addEventListener("touchstart", function(){}, true);
+
 });
