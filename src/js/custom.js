@@ -9,7 +9,7 @@ $(document).ready(function() {
   $('.recipes-carousel').owlCarousel({
       loop:true,
       margin:10,
-      nav:false,
+      dots:false,
       responsiveClass:true,
       responsive:{
           0:{
@@ -35,9 +35,9 @@ $(document).ready(function() {
 
   $('.banner-carousel').owlCarousel({
       items:1,
+      dots:true,
       loop:true,
-      margin:10,
-      dots:true
+      margin:10
   })
 
 });
